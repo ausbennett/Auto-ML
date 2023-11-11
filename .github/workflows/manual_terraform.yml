@@ -33,6 +33,8 @@ jobs:
 
       - name: Terraform Init
         working-directory: ./cloud-infra
+        env:
+          TF_LOG: DEBUG
         run: |
           terraform init
 
